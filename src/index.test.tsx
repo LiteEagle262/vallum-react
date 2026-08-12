@@ -2,7 +2,7 @@ import { describe, expect, it, vi } from "vitest";
 import { renderToString } from "react-dom/server";
 import { VallumProvider, VallumRender, useVallum } from "./index";
 
-describe("@vallum/react server rendering", () => {
+describe("@liteeagle226/react server rendering", () => {
   it("is import-safe and does not initialize during server rendering", () => {
     const clientFactory = vi.fn();
     const html = renderToString(

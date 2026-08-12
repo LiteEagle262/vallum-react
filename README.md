@@ -1,4 +1,4 @@
-# `@vallum/react`
+# `@liteeagle226/react`
 
 React 18+ bindings for the Vallum browser client. The package owns the SDK
 lifecycle, exposes initialization state and protected fetch helpers through
@@ -8,7 +8,7 @@ DOM.
 ## Install
 
 ```sh
-npm install @vallum/client @vallum/react
+npm install @liteeagle226/client @liteeagle226/react
 ```
 
 Vallum requires a secure browser context with Web Crypto and `fetch`. Importing
@@ -18,7 +18,7 @@ starts after hydration in a React Effect.
 ## Add the provider
 
 ```tsx
-import { VallumProvider } from "@vallum/react";
+import { VallumProvider } from "@liteeagle226/react";
 
 export function App() {
   return (
@@ -44,7 +44,7 @@ Use `useVallum` when the UI needs explicit loading, error, and retry states:
 
 ```tsx
 import { useEffect, useState } from "react";
-import { useVallum } from "@vallum/react";
+import { useVallum } from "@liteeagle226/react";
 
 export function Account() {
   const { client, status, error, retry } = useVallum();
@@ -89,7 +89,7 @@ Render-only disclosure values are one-shot pixel references. Pass the original
 value directly to `VallumRender`; do not stringify, clone, or interpolate it.
 
 ```tsx
-import { VallumRender } from "@vallum/react";
+import { VallumRender } from "@liteeagle226/react";
 
 <VallumRender
   value={account.recoveryCode}
@@ -112,7 +112,7 @@ so gate it on an explicit account-level accessibility preference.
 - `VallumContext` is exported for advanced integrations.
 
 `clientFactory` is an advanced provider override intended for tests and custom
-client construction. It must return a client compatible with `@vallum/client`.
+client construction. It must return a client compatible with `@liteeagle226/client`.
 
 ## Security boundary
 

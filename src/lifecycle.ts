@@ -1,4 +1,4 @@
-import type { VallumClient, VallumClientOptions } from "@vallum/client";
+import type { VallumClient, VallumClientOptions } from "@liteeagle226/client";
 
 export type VallumClientFactory = (options: VallumClientOptions) => Promise<VallumClient>;
 

@@ -17,7 +17,7 @@ import {
   type MountOptions,
   type VallumClient,
   type VallumClientOptions,
-} from "@vallum/client";
+} from "@liteeagle226/client";
 import {
   guardAbortSignals,
   initializeVallumClient,
@@ -26,7 +26,7 @@ import {
   type VallumGenerationState,
 } from "./lifecycle.js";
 
-export type { MountOptions, VallumClient, VallumClientOptions } from "@vallum/client";
+export type { MountOptions, VallumClient, VallumClientOptions } from "@liteeagle226/client";
 export type { VallumClientFactory } from "./lifecycle.js";
 
 export type VallumStatus = "initializing" | "ready" | "error";

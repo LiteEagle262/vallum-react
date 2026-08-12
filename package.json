@@ -1,5 +1,5 @@
 {
-  "name": "@vallum/react",
+  "name": "@liteeagle226/react",
   "version": "0.1.0",
   "description": "Lifecycle-safe React bindings for the Vallum browser SDK",
   "license": "Apache-2.0",
@@ -27,7 +27,7 @@
     "postpack": "node ../../scripts/cleanup-package-license.mjs ."
   },
   "dependencies": {
-    "@vallum/client": "^0.1.0"
+    "@liteeagle226/client": "^0.1.0"
   },
   "peerDependencies": {
     "react": ">=18.0.0"
