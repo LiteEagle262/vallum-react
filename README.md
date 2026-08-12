@@ -8,8 +8,12 @@ DOM.
 ## Install
 
 ```sh
-npm install @liteeagle226/client @liteeagle226/react
+npm install @liteeagle226/client @liteeagle226/react react
 ```
+
+`@liteeagle226/react` declares the core client as a runtime dependency; it is
+listed explicitly above so the complete frontend package pair is visible. Add
+`@liteeagle226/admission` in the trusted Node backend that issues grants.
 
 Vallum requires a secure browser context with Web Crypto and `fetch`. Importing
 the package and server-rendering the provider are safe; client initialization
